@@ -14,13 +14,17 @@
 
 - This should create a folder called `node_modules` where all of your dependencies will live. Once this is complete, you can run `gulp watch` to start your webserver.
 
+- You should now be able to access your page at http://localhost:8080/
+
+- The `index.html` has Bootstrap CSS and jQuery already linked- you can add to these or remove them as you like.
+
 You can view more information on the included dependencies using the following links:
 
 - `gulp`: https://www.npmjs.com/package/gulp
 - `gulp-webserver`: https://www.npmjs.com/package/gulp-webserver
 - `gulp-connect`: https://www.npmjs.com/package/gulp-connect
 - `gulp-watch`: https://www.npmjs.com/package/gulp-watch
-
+- `bootstrap` : https://getbootstrap.com/docs/3.3/css/
 - `jquery`: https://jquery.com/
 - `moment.js`: https://momentjs.com/
 
