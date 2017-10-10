@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jevkid/Incentriq.git"
+    "url": "git+https://github.com/jevkid/Simple-HTML-Gulp.git"
   },
   "author": "Megan Jevin",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/jevkid/"
+    "url": "https://github.com/jevkid/Simple-HTML-Gulp"
   },
-  "homepage": "https://github.com/jevkid/"
+  "homepage": "https://github.com/jevkid/Simple-HTML-Gulp"
 }

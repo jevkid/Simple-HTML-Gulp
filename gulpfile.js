@@ -3,12 +3,10 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     watch = require('gulp-watch');
 
-// Add JS dependancies ehre
+// Add additional JS dependancies here
 var jsDependancies = [
   'node_modules/jquery/dist/jquery.js',
-  'node_modules/moment/moment.js',
-  'node_modules/moment-timezone/moment-timezone.js',
-  'node_modules/typeahead.js/dist/typeahead.bundle.min.js',
+  'node_modules/moment/moment.js'
 ];
 
 gulp.task('serve', function() {
