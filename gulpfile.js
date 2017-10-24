@@ -1,13 +1,9 @@
 var gulp = require('gulp'),
     webserver = require('gulp-webserver'),
     connect = require('gulp-connect'),
-    watch = require('gulp-watch');
-
-// Add additional JS dependancies here
-var jsDependancies = [
-  'node_modules/jquery/dist/jquery.js',
-  'node_modules/moment/moment.js'
-];
+    concat = require('gulp-concat'),
+    watch = require('gulp-watch'),
+    babel = require('gulp-babel');
 
 gulp.task('serve', function() {
     connect.server();
@@ -18,7 +14,18 @@ gulp.task('serve', function() {
         }));
 });
 
-gulp.task('watch', ['serve'], function() {
-  gulp.watch('index.html');
-// Add additional files to watch here
+gulp.task('concatScripts', function() {
+  return gulp.src('app.js')
+    .pipe(babel())
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('js'));
 });
+
+gulp.task('watch', function() {
+  gulp.watch('index.html');
+  gulp.watch('app.js', ['concatScripts']);
+});
+
+gulp.task('default', ['concatScripts', 'serve']);
+
+gulp.task('dev', ['default', 'watch']);
